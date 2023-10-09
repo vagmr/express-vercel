@@ -30,7 +30,7 @@ app.use("/", userInfo)
 app.use("/", novelDetail)
 app.use("/", image)
 app.use("/", Login)
-app.use("/", blog);
+// app.use("/", blog);
 
 app.get("/", (req, res) => {
     res.send(`<div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);">
@@ -46,5 +46,6 @@ app.get("/", (req, res) => {
 })
 
 app.listen(3001, () => {
+    // mongo.connect(`mongodb+srv://vagmr:vagmr@atlascluster.hbgdlkf.mongodb.net/`);
 
 })

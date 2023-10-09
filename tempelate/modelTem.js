@@ -5,6 +5,7 @@
  */
 const mongo = require('mongoose');
 function CreateModel(name, modelShcame) {
+
     return mongo.model(name, new mongo.Schema(modelShcame));
 }
 module.exports = CreateModel;

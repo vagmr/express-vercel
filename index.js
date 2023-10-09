@@ -9,8 +9,8 @@ const novelDetail = require("./router/novelDetail")
 const userInfo = require("./router/userInfo")
 const image = require("./router/image")
 const Login = require("./router/login")
-/* const blog = require("./router/blog");
-const mongo = require("mongoose"); */
+const blog = require("./router/blog");
+
 
 //中间件配置
 //适应Post请求
@@ -30,7 +30,7 @@ app.use("/", userInfo)
 app.use("/", novelDetail)
 app.use("/", image)
 app.use("/", Login)
-// app.use("/", blog);
+app.use("/", blog);
 
 app.get("/", (req, res) => {
     res.send(`<div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);">

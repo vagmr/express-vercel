@@ -2,7 +2,6 @@ var express = require('express');
 const router = express.Router();
 //使用token保护接口
 
-const blogModel = require('../tempelate/models/blogModel.js');
 
 //定义中间件
 

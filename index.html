@@ -6,16 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>接口起始页</title>
     <link rel="shortcut icon" href="./static/photos/logo-small.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .api-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .api-list li {
+            margin: 10px 0;
+        }
+
+        .api-link {
+            font-size: 18px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);">
-        <h1>welcome this project</h1>
-        <div>post-llist</div>
-        <ul style="list-style: none;padding-left: 0;">
-            <li><a href="https://express-vercel-eight-delta.vercel.app/forumList">/forumList</a></li>
-            <li><a href="https://express-vercel-eight-delta.vercel.app/listStory">/listStory</a></li>
-            <li><a href="https://express-vercel-eight-delta.vercel.app/blog">/novelView</a></li>
+    <div class="container">
+        <h1>欢迎来到vagmr的接口地址</h1>
+        <div>Explore the available APIs:</div>
+        <ul class="api-list">
+            <li><a class="api-link" href="https://express-vercel-eight-delta.vercel.app/forumList">/forumList</a></li>
+            <li><a class="api-link" href="https://express-vercel-eight-delta.vercel.app/listStory">/listStory</a></li>
+            <li><a class="api-link" href="https://express-vercel-eight-delta.vercel.app/blog">/blog</a></li>
+
         </ul>
     </div>
 </body>

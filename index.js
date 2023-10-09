@@ -10,6 +10,7 @@ const userInfo = require("./router/userInfo")
 const image = require("./router/image")
 const Login = require("./router/login")
 const blog = require("./router/blog");
+const mongo = require("mongoose");
 
 //中间件配置
 //适应Post请求
@@ -45,7 +46,7 @@ app.get("/", (req, res) => {
 })
 
 app.listen(3001, async () => {
-    console.log('Example app listening on port 3000!');
+    console.log('Example app listening on port 3001!');
     try {
         await mongo.connect(`mongodb+srv://vagmr:vagmr@atlascluster.hbgdlkf.mongodb.net/`);
         console.log("连接成功");

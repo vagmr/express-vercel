@@ -18,7 +18,7 @@ app.use(EXPRESS.json())
 app.use(EXPRESS.urlencoded({ extended: false }))
 
 //静态文件托管
-// app.use('/static',EXPRESS.static("static"))
+app.use('/static', EXPRESS.static("static"))
 
 //路由中间件
 app.use("/", listStoryR)

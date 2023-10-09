@@ -9,8 +9,8 @@ const novelDetail = require("./router/novelDetail")
 const userInfo = require("./router/userInfo")
 const image = require("./router/image")
 const Login = require("./router/login")
-const blog = require("./router/blog");
-const mongo = require("mongoose");
+/* const blog = require("./router/blog");
+const mongo = require("mongoose"); */
 
 //中间件配置
 //适应Post请求

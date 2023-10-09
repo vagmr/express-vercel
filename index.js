@@ -45,13 +45,6 @@ app.get("/", (req, res) => {
     `)
 })
 
-app.listen(3001, async () => {
-    console.log('Example app listening on port 3001!');
-    try {
-        await mongo.connect(`mongodb+srv://vagmr:vagmr@atlascluster.hbgdlkf.mongodb.net/`);
-        console.log("连接成功");
-    } catch (error) {
-        console.error("连接失败:", error);
-        // 在连接失败时执行其他操作，例如关闭应用程序或发送通知
-    }
+app.listen(3001, () => {
+
 })

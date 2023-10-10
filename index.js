@@ -1,5 +1,6 @@
 const EXPRESS = require('express')
 const app = EXPRESS()
+const cors = require('cors');
 
 const listStoryR = require("./router/listStory")
 const forumList = require("./router/forumList")
@@ -16,7 +17,7 @@ const blog = require("./router/blog");
 app.use(EXPRESS.json())
 //适应get请求
 app.use(EXPRESS.urlencoded({ extended: false }))
-
+app.use(cors())
 //静态文件托管
 app.use('/static', EXPRESS.static("static"))
 

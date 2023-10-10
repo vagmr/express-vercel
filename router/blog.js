@@ -1,14 +1,16 @@
 const express = require('express');
 // 引入express和redis模块
-const redis = require('redis');
+import { createClient } from '@vercel/kv';
+
+
+const client = createClient({
+    url: process.env.USERS_REST_API_URL,
+    token: process.env.USERS_REST_API_TOKEN,
+})
+
 // 创建一个express路由
 const router = express.Router();
 
-//从环境变量中获取KV数据库的URL
-const KV_URL = process.env.KV_URL;
-
-// 创建一个redis客户端并连接到KV数据库
-const client = redis.createClient(KV_URL);
 
 
 // 定义用于存储博客数据的键名

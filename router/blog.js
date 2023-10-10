@@ -53,7 +53,12 @@ let blogModel = [
 
 try {
     const data = fs.readFileSync(dataFilePath, 'utf-8');
-    blogModel = JSON.parse(data);
+    const lDate = JSON.parse(data);
+    if (lDate == []) {
+        lDate = blogModel
+    } else {
+        blogModel = lDate;
+    }
 } catch (error) {
     console.error('Error reading data file:', error);
 }

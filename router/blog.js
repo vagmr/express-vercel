@@ -1,6 +1,7 @@
 const express = require('express');
 // 引入express和redis模块
-import { createClient } from '@vercel/kv';
+const { createClient } = require('@vercel/kv');
+
 
 
 const client = createClient({

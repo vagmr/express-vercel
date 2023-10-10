@@ -3,7 +3,7 @@ const router = express.Router();
 const fs = require('fs');
 const path = require('path');
 // 定义用于存储博客数据的文件路径
-const dataFilePath = path.join(__dirname, '../db/blogs.json');
+const dataFilePath = path.join("/tmp", "blogs.json");
 
 // 读取博客数据文件的内容
 let blogModel = [];

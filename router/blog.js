@@ -52,14 +52,8 @@ let blogModel = [
 ];
 
 try {
-    if (process.env.online) {
-        const data = fs.readFileSync(dataFilePath, 'utf-8');
-        blogModel.unshift(JSON.parse(data));
-    }
-    else {
-        const data = fs.readFileSync(dataFilePath, 'utf-8');
-        blogModel = JSON.parse(data);
-    }
+    const data = fs.readFileSync(dataFilePath, 'utf-8');
+    blogModel = JSON.parse(data);
 } catch (error) {
     console.error('Error reading data file:', error);
 }

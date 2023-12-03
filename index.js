@@ -11,6 +11,7 @@ const image = require("./router/image")
 const Login = require("./router/login")
 const blog = require("./router/blog");
 const Saying = require("./router/Saying")
+const wordList = require("./router/loveWords")
 
 
 //中间件配置
@@ -32,6 +33,7 @@ app.use("/", image)
 app.use("/", Login)
 app.use("/", blog)
 app.use("/", Saying)
+app.use("/", wordList)
 
 app.get("/", (req, res) => {
 

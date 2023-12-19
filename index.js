@@ -12,6 +12,7 @@ const Login = require("./router/login")
 const blog = require("./router/blog");
 const Saying = require("./router/Saying")
 const wordList = require("./router/loveWords")
+const cxg = require("./router/cxg");
 
 
 //中间件配置
@@ -34,6 +35,7 @@ app.use("/", Login)
 app.use("/", blog)
 app.use("/", Saying)
 app.use("/", wordList)
+app.use("/", cxg)
 
 app.get("/", (req, res) => {
 

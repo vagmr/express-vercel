@@ -164,4 +164,14 @@ router.get("/quiz/:id", (req, res) => {
     }
 });
 
+router.get("/quizzes", (req, res) => {
+    res.json(
+        {
+            code: 200,
+            data: quizData,
+            message: "success"
+        }
+    )
+})
+
 module.exports = router;

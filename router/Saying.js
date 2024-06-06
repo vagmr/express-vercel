@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router()
 //设置名言列表
 let sayingList = [
-    { id: 1, content: "对未来真正的慷慨，是把一切都献给现在" },
+    { "id": 1, "content": "对未来真正的慷慨，是把一切都献给现在" },
     { "id": 2, "content": "成功的秘诀在于每天都能找到一点点进步的感觉。" },
     { "id": 3, "content": "不要等待机会，而要创造机会。" },
     { "id": 4, "content": "每一次的努力，都是为了将来的自己感到骄傲。" },

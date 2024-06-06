@@ -46,5 +46,5 @@ app.get("/", (req, res) => {
 
 app.listen(3001, () => {
     // mongo.connect(`mongodb+srv://vagmr:vagmr@atlascluster.hbgdlkf.mongodb.net/`);
-
+    console.log("Server is running on port 3001")
 })
